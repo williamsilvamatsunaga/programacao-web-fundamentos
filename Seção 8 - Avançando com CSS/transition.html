@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Transition</title>
+
+    <style>
+        div{
+            background-color: orange;
+            width: 200px;
+            height: 150;
+            margin: 100px auto;
+            transition-property: width, height, backgroud-color;
+            transition-duration: .5s, 1s;
+            transition-timing-function: cubic-bezier(.59, -0, 3, .49, 1.36);
+            transition-delay: 0s, .3s;
+
+            /* Abreviação */
+            /* transition: property(all) duration(0s) function(ease) delay(0s) */
+
+            transition: width .5s ease, height 1s ease, .3s, background-color .5s ease;
+        }
+
+        div:hover{
+            width: 400px;
+            height: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>.</div>
+</body>
+
+</html>

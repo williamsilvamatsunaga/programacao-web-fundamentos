@@ -1,0 +1,35 @@
+body{
+    background-color: azure;
+}
+
+h1{
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 54px;
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: rgba(0, 0, 0, 0.474);
+}
+h2{
+    color: rgb(42, 42, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-style: italic;
+
+    text-transform: lowercase;
+
+    text-align: center;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: left;
+    text-indent: 58px;
+    color: rgb(1, 1, 1);
+}
+.destaque{
+    color: brown;
+}
+

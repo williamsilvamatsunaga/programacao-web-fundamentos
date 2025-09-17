@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Acent color</title>
+</head>
+<body>
+    <h1>Meter</h1>
+    <label for="combustivel">Nível do combustivel:</label>
+    <meter id="combustivel" min="0" max="100" low="30" high="90" value="50" optimum=""></meter>
+
+    <h2>Progress</h2>
+    <label>Porcentagem da tarefa:</label>
+    <progress max="100" value="50"> 50% </progress>
+
+
+    <br><br>
+
+    <form oninput="result.value = a.value * b.value">
+
+        <input type="number" name="a" id="a"> X
+        <br>
+        <br>
+        <input type="number" name="b" id="b"> =
+        <br>
+        <br>
+        <output name="result" for="a b"></output>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Popover</title>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Curso web design - Popover</h1>
+
+    <button popovertarget="my_popover">Toggle Popover</button>
+
+    <div id="my_popover" popover>
+        Este texto é aberto ao clicar no botão
+    </div>
+    <hr>
+    <button popovertarget="my_popover2">popover auto (default)</button>
+    <div id="my_popover2" popover="auto">
+        Este texto é aberto ao clicar no botão
+    </div>
+    <hr>
+    <button popovertarget="my_popover3">popover manual</button>
+    <div id="my_popover3" popover="manual">
+        Este texto não fecha ao clicar fora
+    </div>
+</body>
+</html>
