@@ -1,2 +1,7 @@
 Gerador de clip-path:
 https://bennettfeely.com/clippy
+
+Responsive sites
+https://getbootstrap.com
+https://bulma.io
+http://getskeleton.com
