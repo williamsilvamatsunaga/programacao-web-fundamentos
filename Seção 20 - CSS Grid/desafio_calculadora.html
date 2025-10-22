@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        .div-0, .div-ac, .div-porcento, .div-x, .div-barra, .div-7, .div-8, .div-9, .div-igual, .div-4, .div-5, .div-6, .div--, .div-1, .div-2, .div-3, .div-0, .div-ponto, .div-mais{
+            background-color: blue;
+        }
+
+        .div-tela {grid-area: tela;}
+        .div-ac { grid-area: ac; }
+        .div-porcento { grid-area: porcento; }
+        .div-x { grid-area: x; }
+        .div-barra { grid-area: barra; }
+
+        .div-7 { grid-area: sete; }
+        .div-8 { grid-area: oito; }
+        .div-9 { grid-area: nove; }
+        .div-igual { grid-area: igual; }
+
+        .div-4 { grid-area: quatro; }
+        .div-5 { grid-area: cinco; }
+        .div-6 { grid-area: seis; }
+        .div-- { grid-area: menos; }
+
+        .div-1 { grid-area: um; }
+        .div-2 { grid-area: dois; }
+        .div-3 { grid-area: tres; }
+        .div-mais { grid-area: mais; }
+
+        .div-0 { grid-area: zero; }
+        .div-ponto { grid-area: ponto; }
+
+        .container{
+            display: grid;
+            width: 250px;
+            gap: 1em;
+            margin: 0 auto;
+
+            /* grid-template-columns: repeat(4, 1fr); */
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas: 
+            "tela tela tela tela"
+            "ac porcento x barra"
+            "sete oito nove igual"
+            "quatro cinco seis menos"
+            "um dois tres mais"
+            "zero zero ponto mais";
+        }
+
+        .container div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        .container .div-tela{
+            display: block;
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+
+    <div class="container">
+        <div class="div-tela">_</div>
+        <div class="div-ac">AC</div>
+        <div class="div-porcento">%</div>
+        <div class="div-x">X</div>
+        <div class="div-barra">/</div>
+        <div class="div-7">7</div>
+        <div class="div-8">8</div>
+        <div class="div-9">9</div>
+        <div class="div-igual">=</div>
+        <div class="div-4">4</div>
+        <div class="div-5">5</div>
+        <div class="div-6">6</div>
+        <div class="div--">-</div>
+        <div class="div-1">1</div>
+        <div class="div-2">2</div>
+        <div class="div-3">3</div>
+        <div class="div-0">0</div>
+        <div class="div-ponto">.</div>
+        <div class="div-mais">+</div>
+    </div>
+</body>
+</html>
