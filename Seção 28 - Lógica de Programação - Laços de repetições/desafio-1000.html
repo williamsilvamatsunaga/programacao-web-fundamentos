@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Desafio</h1>
+
+    <script>
+        // Perdir para p usuário digitar um número e mostrar a tabuada de 1 até 1000, colocando uma linha divisória ou uma quebra de linha sempre que mudar de dezena.
+
+
+        // Meu código
+
+        // let n = parseInt(prompt("Digite uma número de 0 a 10: "));
+
+        // let contador = 0;
+
+        // while(contador <= 1000){
+        //     for(let i = 0; i <= 9; i++){
+        //         document.write(n + " x " + contador + " = " + n * contador + "<br>");
+        //         contador++;
+        //     }
+        //     document.write("<br>")
+        // }
+
+        // Resolução aula
+
+        let n = parseInt(prompt("Digite uma número de 0 a 10: ")); 
+
+        for(let contador = 1; contador <=1000; contador++){
+            document.write(n + " x " + contador + " = " + n * contador + "<br>");
+
+            if(contador % 10 === 0){
+                document.write("<hr>")
+            }
+        }
+        
+    </script>
+</body>
+</html>
